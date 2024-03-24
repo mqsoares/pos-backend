@@ -15,7 +15,7 @@ public class EmailValidator implements
 
     @Override
     public boolean isValid(String nome, ConstraintValidatorContext constraintValidatorContext) {
-        if(nome.contains("@fuji.com")) {
+        if(nome.contains("@soares.com")) {
             return true;
         }
         constraintValidatorContext.disableDefaultConstraintViolation();
