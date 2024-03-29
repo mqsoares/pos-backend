@@ -11,4 +11,5 @@ public interface ClubeRepository extends CrudRepository<Clube, Integer> {
 
     List<Clube> findAll();
     Clube findByNome(String nome);
+    List<Clube> findAllByOrderByNomeAsc();
 }

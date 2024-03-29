@@ -21,6 +21,10 @@ public class ClubeService {
         return clubeRepository.findAll();
     }
 
+    public List<Clube> listarAsc() {
+        return clubeRepository.findAllByOrderByNomeAsc();
+    }
+
     public Clube listarPorNome(String nome) {
         return clubeRepository.findByNome(nome);
     }
