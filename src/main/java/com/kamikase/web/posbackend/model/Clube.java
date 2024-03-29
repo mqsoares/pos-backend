@@ -5,6 +5,7 @@ import com.kamikase.web.posbackend.validator.NomeClubeValidation;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Email;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.br.CNPJ;
@@ -12,6 +13,7 @@ import org.hibernate.validator.constraints.br.CNPJ;
 
 @Getter
 @Setter
+@Data
 @Entity
 @Table(name = "tbl_clube")
 public class Clube {
